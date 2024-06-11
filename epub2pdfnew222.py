@@ -33,7 +33,7 @@ def epub_to_pdf(epub_path):
                     f.write(item.get_body_content())
 
         # Path to wkhtmltopdf executable
-        path_to_wkhtmltopdf = r'C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe'  # Change this to your actual path
+        path_to_wkhtmltopdf = r'enter path to wkhtmltopdf'  # Change this to your actual path
         if not os.path.isfile(path_to_wkhtmltopdf):
             raise FileNotFoundError(f"wkhtmltopdf executable not found at: {path_to_wkhtmltopdf}")
         
